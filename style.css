@@ -1,0 +1,393 @@
+.body {
+    box-sizing: border-box;
+    background-image: url(img/fondo.jpg);
+    display: flex;
+    background-size: cover;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    font-family: "Madimi One", sans-serif;
+
+}
+
+/* maquetado */
+.flex-box {
+    display: flex;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    margin-bottom: 10px;
+    flex-flow: row wrap;
+    background: transparent;
+
+    flex-grow: 1;
+
+    transition: all 500ms ease-in-out;
+
+
+}
+
+/* Contenedor del logo */
+
+.logo {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+    padding-left: 30px;
+    margin: 10px auto;
+    box-sizing: border-box;
+
+
+
+}
+
+/* Imagen del logo */
+
+.logo img {
+    padding: 10px;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    transition: all 500ms ease-in-out;
+    background: linear-gradient(transparent, rgb(231, 125, 130), transparent);
+    border-radius: 50px;
+    box-shadow: inset 0px 0px 10px rgb(231, 125, 130);
+
+}
+
+.logo img:hover {
+    scale: 1.1;
+}
+
+/* Navegador del header. Status: none */
+
+.header-nav {
+    display: none;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.header-li {
+    display: inline-block;
+    margin: 10px;
+    box-sizing: border-box;
+
+}
+
+.header-li a {
+    text-decoration: none;
+    color: #8570bf;
+    font-weight: 900;
+    padding: 20px;
+    font-weight: 800px;
+    font-size: 30px;
+    transition: all 500ms;
+    text-shadow: 0px 0px 5px #000;
+    box-sizing: border-box ease-in-out;
+}
+
+.header-li a:hover {
+    color: #eee;
+    text-shadow: 5px 5px 15px rgb(17, 17, 93);
+    scale: 1.1;
+
+}
+
+/* main */
+
+.main {
+    display: flex;
+    flex-flow: wrap;
+    margin: 0px 20px;
+    flex-grow: 8;
+    justify-content: center;
+
+}
+
+/* Contenedor Text area */
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 5;
+    background: radial-gradient(transparent, rgb(11, 11, 61));
+    margin: 20px 10px 20px 10px;
+    border-radius: 50px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 500ms ease-in-out;
+    height: auto;
+    justify-content: space-between;
+    flex-shrink: 2;
+
+}
+
+.container:hover {
+
+    box-shadow: 0px 0px 15px 10px rgb(80, 204, 253);
+}
+
+/* Contenedor del formulario*/
+.form-container {
+    flex-flow: wrap;
+    max-height: 400px;
+}
+
+.textarea {
+    flex-flow: wrap;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 0 30px;
+    border-radius: 50px;
+    background: transparent;
+    width: 100%;
+    height: 400px;
+    font-family: "Madimi One", sans-serif;
+    color: rgb(171, 148, 255);
+    font-size: 50px;
+    box-sizing: border-box;
+    transition: all 500ms ease-in-out;
+    text-transform: lowercase;
+    margin: 10px 10px 20px 0px;
+}
+
+.textarea:focus {
+    font-size: 2em;
+}
+
+.textarea:hover {
+    color: #eee;
+}
+
+.container p {
+
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    box-sizing: border-box;
+    margin: 5px;
+    transition: all 500ms ease-in-out;
+}
+
+.container p:hover {
+
+    scale: 1.3;
+    text-shadow: 1px 1px 20px #8b77ff;
+}
+
+.text-container {
+    margin: auto;
+    justify-content: center;
+}
+
+/* Botones */
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+input {
+    background: linear-gradient(transparent, rgb(49, 49, 123), transparent);
+    border: none;
+    outline: none;
+    color: white;
+    width: 200px;
+    padding: 25px;
+    margin: 7px 10px;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 10px rgb(168, 200, 255);
+    font-weight: 800;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: scale 500ms ease-in-out;
+}
+
+input:hover {
+    background: radial-gradient(rgb(242, 34, 93), transparent);
+    box-shadow: inset 0px 0px 10px, rgb(241, 123, 157);
+    scale: 1.1;
+}
+
+input:active {
+    background: radial-gradient(rgb(217, 164, 38), transparent);
+}
+
+/* Aside */
+
+.aside {
+    display: flex;
+    background: radial-gradient(transparent, white);
+    border-radius: 50px;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 0px 20px #fff;
+    margin: 20px 10px 20px 10px;
+    transition: all 300ms ease-in-out;
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 20px;
+    min-width: 200px;
+    max-width: 400px;
+    justify-content: center;
+    flex-shrink: 2;
+}
+
+.aside:hover {
+    box-shadow: 0px 0px 15px 10px rgb(80, 204, 253);
+}
+
+/* Contenedor del mensaje encriptado*/
+.mensaje-encriptado {
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 6;
+    border-radius: 50px;
+
+}
+
+/* Pecera */
+.aside-img-container {
+    display: flex;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+
+    margin: auto;
+}
+
+/* Pez */
+.img-aside {
+    justify-content: center;
+    top: 100%;
+    bottom: 100%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    transition: all 500ms ease-in-out;
+}
+
+.img-aside:hover {
+    scale: 1.1;
+}
+
+.mensaje {
+    display: flex;
+    flex-flow: wrap;
+    font-weight: bold;
+    font-size: 2em;
+    transition: all 500ms ease-in-out;
+}
+
+
+.mensaje:hover {
+    scale: 1.1;
+}
+
+.aside p {
+    margin: 0 auto;
+    padding: 10px;
+    flex-flow: 1;
+
+}
+
+.encriptado {
+    margin-top: 15px;
+    font-size: 30px;
+    color: #000;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 400px;
+}
+
+.container-btn {
+    margin: 10px;
+}
+
+.copiar {
+    background: radial-gradient(rgb(97, 97, 174), rgb(49, 49, 123));
+    border: none;
+    outline: none;
+    color: #eee;
+    width: 200px;
+    padding: 25px;
+    margin: 7px 10px;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 10px rgb(168, 200, 255);
+    font-weight: 800;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: scale 500ms ease-in-out;
+}
+
+.copiar:hover {
+    scale: 1.1;
+}
+
+/* Footer */
+
+.footer {
+    flex-grow: 1;
+    justify-content: center;
+    bottom: 100%;
+    color: white;
+    margin: 20px 0;
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-stretch: extra-expanded;
+    padding: 0 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenido-footer {
+    transition: all 500ms ease-in-out
+}
+
+.contenido-footer:hover {
+    scale: 1.3;
+    text-shadow: 1px 1px 20px #ff9292;
+
+}
+
+.nombre {
+    font-weight: bold;
+
+}
+
+/* media teléfonos*/
+
+@media screen and(max-width:480px) {
+    .body {
+        background: repeat;
+    }
+
+    .main {
+        flex-flow: column;
+        margin: 10px 5px;
+    }
+
+    .aside {
+        margin: auto;
+    }
+
+
+}
